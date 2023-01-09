@@ -2,10 +2,16 @@ import Footer from "../components/UI/Footer";
 import {links} from '../assets/links.js'
 
 const Store = () => {
+    const ref = useRef();
+
+    const handleScroll = () => {
+        ref.current?.scrollIntoView({behavior: 'smooth'})
+    }
+
     return (
         <>
-            <h1>STORE</h1>
-            <Footer links={links}/>
+            <Hero scrollFunc={handleScroll}/>
+            <Content ref={ref}/>
         </>
     )
 }
