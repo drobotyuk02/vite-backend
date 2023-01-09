@@ -4,9 +4,9 @@ const handleChange = (event) => {
     console.log("I've changed")
 }
 
-const Search = () => {
+const Search = (props) => {
     return (
-        <form onSubmit={console.log("submitted!")}>
+        <form onSubmit={console.log("submitted!")} >
             {/*<div className="containerSearch" style={{ marginBottom: "45px" }}>*/}
             <div className="containerSearch">
                 <input

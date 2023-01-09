@@ -2,7 +2,10 @@ import React from "react";
 
 const Content = React.forwardRef((props, ref) => {
     return (
-        <h1 ref={ref}>CONTENT</h1>
+        <div id="content" ref={ref}>
+            <a href="#content" hidden={true} />
+            {props.children}
+        </div>
     );
 });
 

@@ -5,7 +5,7 @@
   left: 0;
   right: 0;
   bottom: auto;
-  width: 1.75em; //original is 300px, better is 200px
+  width: 200px; //original is 300px, better is 200px
   height: 30px;
   .search {
     position: absolute;
@@ -84,12 +84,12 @@
       cursor: pointer;
     }
     &:focus {
-      width: 2em;  //interesting result at 100px
+      width: 160px;  //interesting result at 100px, 2em
       opacity: 1;
       cursor: text;
     }
     &:focus ~ .search {
-      right: -200px;
+      right: -280px;
       background: #151515;
       z-index: 6;
       &::before {
